@@ -1,0 +1,338 @@
+/* css reset  */
+*{
+    margin: 0px;
+    padding: 0;
+}
+/* css variavles  */
+:root{
+    --navbar-height: 59px;
+}
+#navbar{
+   display: flex;
+   align-items: center;
+   position: absolute;
+   top: 0;
+}
+/* logo and image  */
+#logo{
+margin: 19px 24px;
+}
+#logo img{
+
+    margin: -11px -12px;
+    height: 100px;
+     border: 5px solid whitesmoke ;
+    border-radius: 60px;
+}
+#logo img:hover{
+  border-color: rgba(105, 202, 232, 0.874);
+}
+
+/* list styling  */
+#navbar ul{
+    display: flex;
+    font-family: 'Courgette', cursive;
+font-family: 'Rubik Wet Paint', cursive;
+font-family: 'Russo One', sans-serif;
+}
+#navbar ul li{
+    color: black;
+    list-style: none;
+    font-size: 1.rem;
+}
+#navbar ul li a{
+    color:white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: #fff;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -5;
+    opacity: -0.6;
+}
+
+/* home section */
+#HOME{
+    display: flex;
+    flex-direction: column;
+    padding: 4px 100px;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+#HOME::before{
+    content: "";
+    position: absolute;
+    background: url(bg1.jpg) no-repeat center center/cover;
+    height: 700px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+
+}
+/* utility class  */
+#HOME h1{
+    color:white;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+font-family: 'Rubik Wet Paint', cursive;
+}
+#HOME h1:hover{
+    text-decoration: underline;
+    color: rgb(8, 188, 128);
+}
+#HOME p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Courgette', cursive;
+}
+#HOME p:hover{
+    color: rgb(125, 207, 180);
+}
+.h-primary{
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 82px;
+    padding-bottom: 0px;
+    margin: 19px;
+}
+
+.h-primary:hover{
+    text-decoration: underline;
+
+}
+.btn{
+    padding: 6px 30px;
+    border: 4px solid white;
+    background-color: grey;
+    margin: 60px;
+    font-size: 1.8rem;
+    border-radius: 10px;
+    font-family: 'Courgette', cursive;
+    font-family: 'Rubik Wet Paint', cursive;
+    font-family: 'Russo One', sans-serif;
+    cursor: pointer;
+}
+.btn:hover{
+    color: rgb(7, 10, 10);
+    background-color: rgb(212, 131, 131);
+    text-decoration: underline;
+    font-weight: bold;
+    
+}
+.centre{
+    text-align: center;
+}  
+.h-seconary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+/* SRVICES SECTIONS  */
+#SERVICE{ 
+    margin: 34px;
+    display: flex;
+}
+#SERVICE .box{
+    margin: 9px;
+    margin-top: -5px;
+    padding: 50px;
+    border: 7px solid #1fd8de;
+    border-radius: 32px;  
+    background-image: radial-gradient(black, transparent);
+
+}
+
+#SERVICE .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+#SERVICE .box:hover{
+    border: 4px solid rgb(39, 20, 20);
+    border-bottom: 5px;
+
+}
+#SERVICE .box p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* clint section  */
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client-section{
+height: 600px;
+position: relative;
+}
+
+.client-items{
+    padding: 30px;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('services.jpg');
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    height: 500px;
+    }
+    #clients  img{
+        height: 150px;
+    }
+    #clients  img:hover{
+        border: 4px solid rgb(67, 133, 194);
+    }
+
+
+    /* contact section */
+    #contact{
+      
+        display: inline-block;
+                
+           /* text-align: center; */
+           
+    }
+    #contact .h-primary{
+        
+        display: flex;
+        margin-left: 364px;
+        margin-bottom: 84px;
+        margin-top: -154px;
+        text-decoration: underline;
+        
+         
+    }
+   
+
+    #contact::before{
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+          opacity: 10;
+          background: url('contactus.jpg')no-repeat center center/cover;
+
+    }
+
+#contact-box{
+    display: block;
+    margin-left: 347px;
+    margin-right: 242px;
+    justify-content: center;
+    text-align: center;
+}
+
+#contact-box .form-group{
+    margin: 7px;
+    padding: 10px;
+    margin-left: -87px;
+    margin-right: 210px;
+    font-size: 20px;
+    display: block;
+    border: 6px solid rgb(220, 42, 26);
+    border-radius: 10px;
+    cursor: pointer;
+}
+#contact-box .form-group:hover{
+    border: 6px solid rgb(19, 2, 0);
+    border-radius: 25px;
+}
+
+/* #contact-box .form-group a:hover{
+        background-color: black;
+} */
+ #contact .contact-items{
+    display: inline-block;
+    justify-content: center;
+    margin-top: 95px;
+    margin-left: 123px;
+
+ }
+
+ .contact-items img{
+    height: 100px;
+    margin: 5px;
+    display: flexbox; 
+    border: 6px solid #3dc6cb;
+    border-radius: 8px;  
+    cursor: pointer;
+    
+
+ }
+ .contact-items img:hover{
+    border: 7px solid #014c4f;
+    border-radius: 25px;  
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer .center{
+    border: 5px solid rgb(80 128 126);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 58px;
+    margin-left: 46px;
+    margin-right: -86px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+
+
+}
+#footer .center:hover{
+    background-color: rgba(51, 21, 36, 0.219);
+    border:6px solid rgb(7, 200, 234) ;
+    color: black ;
+    text-decoration: underline;
+}
+#footer h1{
+    margin-top: 28px;
+    margin-left: -265px;
+}
+#footer h1:hover{
+    text-decoration: underline;
+    color: rgb(6, 6, 50);
+}
